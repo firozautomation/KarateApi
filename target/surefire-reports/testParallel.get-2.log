@@ -1,0 +1,387 @@
+10:54:39.306 karate.env system property was: null 
+10:54:39.320 request:
+1 > POST https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 86
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+grant_type=password&password=Connect1&username=miah.ashrafuzzaman%40fitchsolutions.com
+
+10:54:39.697 response time in milliseconds: 374.51
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Tue, 30 Jul 2019 14:54:39 GMT
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY0NTAyMDc5LCJpYXQiOjE1NjQ0OTg0NzksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3N2NjYzY4NS1kOWU0LTRmZmMtYjRmMi04ZjUyNjdiZWY5Y2EiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.NQMAZ7cdsC48q0_U13XQ_Jj6IMfGe4aBYNeCjLOiYFQ","token_type":"bearer","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNzdjY2M2ODUtZDllNC00ZmZjLWI0ZjItOGY1MjY3YmVmOWNhIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgyNDc5LCJpYXQiOjE1NjQ0OTg0NzksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NjM0ZTNmMi05MTU1LTRlOGUtOGQ3Ni0yN2Q1ZTFkMDc5YjYiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.zy7AeD92a_x9FOuOzPHzg5BHOvFjmd6-QFD0usDer44","expires_in":3600,"scope":"trust","sub":"http://identity-data-service:8080/v2/users/5ba3d4fae90c9f0001733862","iss":"https://login.fitchconnect-qa.com","iat":1564498479,"jti":"77ccc685-d9e4-4ffc-b4f2-8f5267bef9ca"}
+
+10:54:39.700 [print] Login token created: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNzdjY2M2ODUtZDllNC00ZmZjLWI0ZjItOGY1MjY3YmVmOWNhIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgyNDc5LCJpYXQiOjE1NjQ0OTg0NzksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NjM0ZTNmMi05MTU1LTRlOGUtOGQ3Ni0yN2Q1ZTFkMDc5YjYiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.zy7AeD92a_x9FOuOzPHzg5BHOvFjmd6-QFD0usDer44
+10:54:39.711 request:
+2 > GET https://auth.fitchconnect-qa.com/v1/alert/events%3Ffilter%5B5d07b2ebe1526900018ef433%5D
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNzdjY2M2ODUtZDllNC00ZmZjLWI0ZjItOGY1MjY3YmVmOWNhIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgyNDc5LCJpYXQiOjE1NjQ0OTg0NzksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NjM0ZTNmMi05MTU1LTRlOGUtOGQ3Ni0yN2Q1ZTFkMDc5YjYiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.zy7AeD92a_x9FOuOzPHzg5BHOvFjmd6-QFD0usDer44
+2 > Connection: Keep-Alive
+2 > Content-Type: application/vnd.api+json
+2 > Host: auth.fitchconnect-qa.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+2 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+
+10:54:39.767 response time in milliseconds: 56.29
+2 < 303
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Language: en-US
+2 < Content-Length: 0
+2 < Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com
+2 < Date: Tue, 30 Jul 2019 14:54:39 GMT
+2 < Expires: 0
+2 < Location: https://app.fitchconnect-qa.com/
+2 < Pragma: no-cache
+2 < Server: nginx/1.15.10
+2 < Set-Cookie: XSRF-TOKEN=372b2f50-f729-46ca-b95e-dc09455671f5; Path=/; Secure; HttpOnly
+2 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+10:54:39.772 request:
+3 > GET https://auth.fitchconnect-qa.com/v1/alert/events%3Ffilter%5B5d07b2ebe1526900018ef433%5D
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNzdjY2M2ODUtZDllNC00ZmZjLWI0ZjItOGY1MjY3YmVmOWNhIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgyNDc5LCJpYXQiOjE1NjQ0OTg0NzksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NjM0ZTNmMi05MTU1LTRlOGUtOGQ3Ni0yN2Q1ZTFkMDc5YjYiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.zy7AeD92a_x9FOuOzPHzg5BHOvFjmd6-QFD0usDer44
+3 > Connection: Keep-Alive
+3 > Content-Type: application/vnd.api+json
+3 > Cookie: XSRF-TOKEN=372b2f50-f729-46ca-b95e-dc09455671f5
+3 > Host: app.fitchconnect-qa.com
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+3 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+
+10:54:39.842 response time in milliseconds: 70.24
+3 < 301
+3 < Connection: keep-alive
+3 < Content-Length: 0
+3 < Date: Tue, 30 Jul 2019 14:54:39 GMT
+3 < Server: nginx/1.11.3
+3 < cache-control: no-cache
+3 < content-security-policy: default-src 'unsafe-inline' 'unsafe-eval' https: wss:; img-src * data: blob: 'unsafe-inline'; object-src 'none'
+3 < location: https://login.fitchconnect-qa.com/oauth/authorize?response_type=code&client_id=3f9bt62s8oabarnbr97djh069l&attemptedUrl=%2F&redirect_uri=https%3A%2F%2Fapp.fitchconnect-qa.com%2Fauthentication%2Foauth&state=aHR0cDovL2FwcC5maXRjaGNvbm5lY3QtcWEuY29tLw%3D%3D&messageContent=Your%20session%20has%20ended%2C%20please%20log%20in%20again.&messageType=error&messageCode=sessionExpired
+3 < strict-transport-security: max-age=15768000
+3 < vary: accept-encoding
+3 < x-content-type-options: nosniff
+3 < x-download-options: noopen
+3 < x-frame-options: DENY
+3 < x-xss-protection: 1; mode=block
+
+10:54:39.843 request:
+4 > GET https://auth.fitchconnect-qa.com/v1/alert/events%3Ffilter%5B5d07b2ebe1526900018ef433%5D
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNzdjY2M2ODUtZDllNC00ZmZjLWI0ZjItOGY1MjY3YmVmOWNhIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgyNDc5LCJpYXQiOjE1NjQ0OTg0NzksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NjM0ZTNmMi05MTU1LTRlOGUtOGQ3Ni0yN2Q1ZTFkMDc5YjYiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.zy7AeD92a_x9FOuOzPHzg5BHOvFjmd6-QFD0usDer44
+4 > Connection: Keep-Alive
+4 > Content-Type: application/vnd.api+json
+4 > Cookie: XSRF-TOKEN=372b2f50-f729-46ca-b95e-dc09455671f5
+4 > Host: login.fitchconnect-qa.com
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+4 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+
+10:54:40.383 response time in milliseconds: 537.66
+4 < 303
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Connection: keep-alive
+4 < Content-Length: 0
+4 < Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com
+4 < Date: Tue, 30 Jul 2019 14:54:40 GMT
+4 < Expires: 0
+4 < Location: https://login.fitchconnect-qa.com/login
+4 < Pragma: no-cache
+4 < Server: nginx/1.15.10
+4 < Set-Cookie: SESSION=ZjUyZjNjNmItMDhjMC00NjYxLWFkNGYtYzVhOTc0NDBiYzdm; Path=/; Secure; HttpOnly; SameSite=Lax
+4 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+
+10:54:40.385 request:
+5 > GET https://auth.fitchconnect-qa.com/v1/alert/events%3Ffilter%5B5d07b2ebe1526900018ef433%5D
+5 > Accept-Encoding: gzip,deflate
+5 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNzdjY2M2ODUtZDllNC00ZmZjLWI0ZjItOGY1MjY3YmVmOWNhIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgyNDc5LCJpYXQiOjE1NjQ0OTg0NzksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NjM0ZTNmMi05MTU1LTRlOGUtOGQ3Ni0yN2Q1ZTFkMDc5YjYiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.zy7AeD92a_x9FOuOzPHzg5BHOvFjmd6-QFD0usDer44
+5 > Connection: Keep-Alive
+5 > Content-Type: application/vnd.api+json
+5 > Cookie: SESSION=ZjUyZjNjNmItMDhjMC00NjYxLWFkNGYtYzVhOTc0NDBiYzdm; XSRF-TOKEN=372b2f50-f729-46ca-b95e-dc09455671f5
+5 > Host: login.fitchconnect-qa.com
+5 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+5 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+
+10:54:40.486 response time in milliseconds: 88.85
+5 < 200
+5 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+5 < Connection: keep-alive
+5 < Content-Language: en-US
+5 < Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com
+5 < Content-Type: text/html;charset=UTF-8
+5 < Date: Tue, 30 Jul 2019 14:54:40 GMT
+5 < Expires: 0
+5 < Pragma: no-cache
+5 < Server: nginx/1.15.10
+5 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+5 < Transfer-Encoding: chunked
+5 < Vary: Accept-Encoding
+5 < X-Content-Type-Options: nosniff
+5 < X-Frame-Options: DENY
+5 < X-XSS-Protection: 1; mode=block
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+    <title>Login</title>
+    <script type="text/javascript" src="./resources/js/jquery.3.1.1.min.js"></script>
+    <script type="text/javascript" src="./resources/js/login.js"></script>
+	<link href="/resources/css/main.css" rel="stylesheet" />
+	<link href="/resources/css/login.css" rel="stylesheet" />
+    <link href="/resources/css/open-sans.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="d-f mh-a fxd-c fxg-1 h-100v">
+        <div class="mh-a mt-a mv-a w-400px">
+            <div class="d-f jc-c ai-c">
+                <!-- fitch svg -->
+                <svg class="fill-gray700 fitchSvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="28 19 375 182">
+                    <polygon points="41.9,47.9 41.9,106.9 99.4,106.9 99.4,115.7 41.9,115.7 41.9,187.4 31.4,187.4 31.4,39.1 104.4,39.1 104.4,47.9 41.9,47.9"
+                    />
+                    <path d="M125.7,60.7h-0.2c-4.8,0-8.1-4.2-8.1-9c0-4.8,3.7-9.2,8.5-9.2c4.8,0,8.3,4.2,8.3,9.2 C134.2,56.5,130.9,60.7,125.7,60.7L125.7,60.7z"
+                    />
+                    <polygon points="131.2,187.4 120.6,187.4 120.6,81.8 131.2,81.8 131.2,187.4" />
+                    <path d="M175.4,90.4V159c0,13.4,4.2,21.8,15.3,21.8c5.5,0,9.4-0.7,12.1-1.5l1.3,7.9c-3.5,1.3-8.3,2.4-14.7,2.4 c-7.7,0-14-2.4-18-7.3c-4.8-5.5-6.6-14.5-6.6-25.3V90.4h-17.8v-8.6h17.8V62.5l10.5-4v23.3h30v8.6H175.4L175.4,90.4z"
+                    />
+                    <path d="M291.2,94.6c-5-3.1-13.2-6.2-24.8-6.2c-28.3,0-42.8,21.6-42.8,46.4c0,27.7,17.3,45.8,41.7,45.8 c12.5,0,20.6-3.5,26.3-6.2l2.8,8.4c-4.6,2.2-15.6,6.8-30.9,6.8c-30.3,0-50.4-22.2-50.4-53.9c0-33.7,22.8-56.3,54.1-56.3 c12.9,0,23.7,3.7,27.6,6.6L291.2,94.6L291.2,94.6z"
+                    />
+                    <path d="M386.8,187.4v-62.5c0-18.9-7.5-36.3-28.9-36.3c-14.9,0-27.2,10.8-31.8,23.8c-1.1,3.3-1.3,6.2-1.3,10.6v64.5 h-10.5V31h10.5v69.7h0.4c3.1-5.9,8.1-11.4,14.2-15.2c6.1-3.7,13.4-6.2,21.3-6.2c9.9,0,36.6,5.1,36.6,44.4v63.6H386.8L386.8,187.4z"
+                    />
+                </svg>
+                <!-- connect svg -->
+                <svg class="fill-blue0277bd connectSvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    preserveAspectRatio="none" viewBox="410 19 705 182">
+                    <path d="M521.9,58.9c-7-3.5-17.3-6.2-29.6-6.2c-34.6,0-57.7,22.2-57.7,61.2c0,36.5,20.8,59.6,56.6,59.6
+                    c11.8,0,23.7-2.4,31.3-6.2l3.7,15.4c-6.8,3.5-21,7-39,7c-41.7,0-72.8-26.4-72.8-75.2c0-46.6,31.4-77.9,77.2-77.9
+                    c18.2,0,30,4,35.1,6.6L521.9,58.9L521.9,58.9z M579.5,189.8c-28.5,0-50.9-21.1-50.9-54.8c0-35.4,23.5-56.3,52.6-56.3
+                    c30.5,0,51.1,22.2,51.1,54.6C632.4,172.7,605,189.8,579.5,189.8L579.5,189.8z M580.8,93.3c-22.6,0-32.4,21.1-32.4,41.1
+                    c0,23.3,13.2,40.9,32,40.9c18.4,0,32.2-17.4,32.2-41.4C612.6,115.9,603.6,93.3,580.8,93.3L580.8,93.3z M716.8,187.4V126
+                    c0-17.2-6.4-31.5-24.6-31.5c-12.5,0-22.4,9-25.9,19.8c-0.9,2.4-1.3,5.7-1.3,9v64h-19.3v-77.7c0-11.2-0.2-20-0.9-28.8H662
+                    l1.1,17.6h0.4c5.3-9.9,17.5-19.8,35.1-19.8c14.7,0,37.5,8.8,37.5,45.3v63.4H716.8L716.8,187.4z M827.5,187.4V126
+                    c0-17.2-6.4-31.5-24.6-31.5c-12.5,0-22.4,9-25.9,19.8c-0.9,2.4-1.3,5.7-1.3,9v64h-19.3v-77.7c0-11.2-0.2-20-0.9-28.8h17.1
+                    l1.1,17.6h0.4c5.3-9.9,17.5-19.8,35.1-19.8c14.7,0,37.5,8.8,37.5,45.3v63.4H827.5L827.5,187.4z M952.5,137.7h-74.5
+                    c0.4,26.2,16.9,37,36.4,37c13.8,0,22.4-2.4,29.4-5.5l3.5,13.9c-6.8,3.1-18.6,6.8-35.5,6.8c-32.7,0-52.2-21.8-52.2-53.9
+                    c0-32.1,18.9-57.2,49.8-57.2c34.9,0,43.8,30.4,43.8,49.9C953.1,132.6,952.9,135.5,952.5,137.7L952.5,137.7z M907.7,92.6
+                    c-19.7,0-28.1,17.8-29.6,31.2h56.3C934.7,111.7,929.4,92.6,907.7,92.6L907.7,92.6z M1037.7,99.2c-4.6-2.4-11.8-5.1-22.4-5.1
+                    c-24.3,0-37.5,18.3-37.5,40.3c0,24.6,15.8,39.8,36.8,39.8c11,0,18.2-2.6,23.7-5.1l3.3,14.5c-5,2.4-16.2,6.2-30.5,6.2
+                    c-32,0-52.8-21.8-52.8-54.3c0-32.8,22.4-56.8,57-56.8c11.4,0,21.5,2.9,26.7,5.7L1037.7,99.2L1037.7,99.2z M1079.4,95.7v57.4
+                    c0,13.2,3.7,20.7,14.5,20.7c5.3,0,8.3-0.4,11.2-1.3l0.9,14.7c-3.7,1.3-9.6,2.6-17.1,2.6c-9,0-16.2-3.1-20.8-8.1 c-5.3-5.9-7.5-15.4-7.5-27.9V95.7h-16.4V80.9h16.4V61.1l18.9-5.7v25.5h27.6v14.7H1079.4L1079.4,95.7z"
+                    />
+                </svg>
+            </div>
+
+            <div class="mv">
+            	<noscript>
+		            <div id="noJavascript" class="bdrs-tiny p- bgc-red500-trans ">
+		                Javascript is required to use Fitch Connect. To login, please enable javascript within the browser. 
+		            </div>
+	            </noscript>
+                <div id="error" class="bdrs-tiny p- bgc-red500-trans d-n">
+                    <!-- Message placeholder -->
+                </div>
+                <div id="samlUnavailableError" class="bdrs-tiny p- bgc-red500-trans d-n">
+                    Single Sign-on is currently unavailable. Please try again later.
+                </div>
+                <div id="samlUnauthorizedError" class="bdrs-tiny p- bgc-red500-trans d-n">
+                    Single Sign-on is not authorized for this user. Please contact Client Services for access.
+                </div>
+                <div id="samlOrganizationDoesNotExistError" class="bdrs-tiny p- bgc-red500-trans d-n">
+                    Single Sign-on cannot be initiated for this organization. Please contact Client Services.
+                </div>
+                <div id="samlInvalidOrganizationError" class="bdrs-tiny p- bgc-red500-trans d-n">
+                    Single Sign-on was used with an incorrect organization. Please use the organization that you belong to.
+                </div>
+                <div id="passwordResetMessage" class="bdrs-tiny d-n p- bgc-green500-trans">
+                    Your password has been reset. Please continue by logging in with your new password.<br /><br/> New passwords
+                    will be updated for Fitch Connect Web, Excel and API Applications
+                </div>
+                <div id="message">
+	                
+					    <div class="bdrs-tiny p- mt-- bgc-gray300-trans" >
+					        Your session has ended. Please log in again.
+					    </div>
+					    
+					
+				</div>
+            </div>
+            
+        	<div id="login">  
+        		<div id="usernameLogin">
+        			<form id="usernameLoginForm" method="post"> 
+	        			<input type="hidden" name="_csrf" value="372b2f50-f729-46ca-b95e-dc09455671f5"/>
+	         				          
+						<!-- username -->
+		                <input type="text" id="username" name="username" placeholder="Enter your username" class="d-b p- mb- w-1/1 bdrs-tiny bds-s bdw-1 bdc-gray300"
+		                />
+		
+		                <!--password -->
+		                <input type="password" id="password" name="password" placeholder="Enter your password" class="d-b p- mb- w-1/1 bdrs-tiny bds-s bdw-1 bdc-gray300"
+		                />
+		                				
+		                <!-- button -->
+		                <button id="signIn" value="Log In" disabled="" type="submit" class="d-b w-1/1 p- bdrs-tiny c-white c-white-hv bgc-blue0277bd bgc-gray500-hv mv- cur-p">Log In</button>
+					</form>
+					
+					<!-- remember me/forgot password -->
+	                <div class="d-f fz-small">
+	                    <label class="d-f ai-c cur-p-hv"><input id="rememberme" name="rememberme" class="mr---" type="checkbox"></input>Remember me</label>
+	                    <a id="showForgotPassword" class="d-b ml-a" >Forgot Password</a>
+	                    <div id="singleSignOnEntry" class="d-b ml-a">
+	                    	<a id="singleSignOnToggle" >Single Sign-On</a>  
+	               		</div>
+	                </div> 
+					
+					<div id="requestDemo">
+						<hr id="requestDemoLineBreak" />
+						<p>New to Fitch Connect? <a target="_blank" href="https://www.fitchsolutions.com/fitch-connect?attemptedUrl=%252F">Request a demo</a></p>
+					</div>
+        		</div>   
+				
+				<!--  SAML -->
+				<div id="singleSignOn" class="d-n">
+	                <input type="text" id="singleSignOnInput" name="password" placeholder="Enter your organization id" class="d-b p- mb- w-1/1 bdrs-tiny bds-s bdw-1 bdc-gray300"/>
+					<button id="singleSignOnButton" disabled="" type="submit" class="d-b w-1/1 p- bdrs-tiny c-white c-white-hv bgc-blue0277bd bgc-gray500-hv mv- cur-p">Single Sign-on</button>
+					<div class="d-f fz-small">
+						<a id="usernameLoginToggle" class="d-b ml-a" >Enter Username</a>
+					</div>
+				</div>
+			</div>
+			
+            <!-- forgot password template -->
+            <div id="forgotPasswordTemplate" class="d-n">
+                <div class="mv">
+                    <div id="forgotPasswordMessage" class="bdrs-tiny p- bgc-gray300-trans">
+                        Please enter your email address. We'll send an email with instructions.
+                        <br /><br />If your account is inactive, please contact Client Services.
+                        <br /><br />New passwords will be updated for Fitch Connect Web, Excel and API Applications.
+                    </div>
+                    <div id="forgotPasswordDone" class="bdrs-tiny d-n p- bgc-green500-trans">
+                        A message with instructions for resetting your password has been sent to the email address associated with your account.
+                        <br /><br />New passwords will be updated for Fitch Connect Web, Excel and API Applications
+                    </div>
+                    <div id="forgotPasswordInvalidEmail" class="bdrs-tiny d-n p- bgc-red500-trans">
+                    	Please enter a valid email address.
+                    </div>
+                    <div id="forgotPasswordTokenInvalid" class="mt-- bdrs-tiny d-n p- bgc-red500-trans">
+                        The link to reset your password has either already been used or has expired. Please re-enter your email to receive a new password reset link.
+                    </div>
+                </div>
+
+                <!-- email -->
+                <label class="d-b tt-u w-1/1 mb---" for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" class="d-b p- mb- w-1/1 bdrs-tiny bds-s bdw-1 bdc-gray300"
+                />
+
+                <!-- button -->
+                <button id="forgotPassword" value="Submit" type="submit" class="d-b w-1/1 p- bdrs-tiny c-white c-white-hv bgc-blue0277bd bgc-gray500-hv mv- cur-p">Submit</button>
+
+                <div class="d-f fz-small">
+                    <a id="showLogin" class="d-b ml-a">Return to login</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- inquiries -->
+        <div class="login-footer">
+            <div class="pv- bdbs-s bdw-2 bdc-blue0277bd">
+                <div class="fw-m tt-u">Inquiries</div>
+            </div>
+            <div class="d-f jc-sb mt">
+                <div class="d-f ai-c">
+                    <a href="mailto:usaclientservices@fitchsolutions.com" class="mr- bdrs-50pct bdw-1 bdc-gray300 bds-s p- cur-p-hv bgc-dim10-hv">
+                        <svg class="h-24px w-24px fill-gray400" viewBox="0 0 1792 1792" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="none">
+                            <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
+                        </svg>
+                    </a>
+                    <div><span class="fw-m tt-u">New York</span><br /><a href="mailto:usaclientservices@fitchsolutions.com">Client Services</a><br
+                        />+1 212 908 0800</div>
+                </div>
+                <div class="d-f ai-c">
+                    <a href="mailto:emeaclientservices@fitchsolutions.com" class="mr- bdrs-50pct bdw-1 bdc-gray300 bds-s p- cur-p-hv bgc-dim10-hv">
+                        <svg class="h-24px w-24px fill-gray400" viewBox="0 0 1792 1792" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="none">
+                            <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
+                        </svg>
+                    </a>
+                    <div><span class="fw-m tt-u">London</span><br /><a href="mailto:emeaclientservices@fitchsolutions.com">Client Services</a><br
+                        />+44 (0)20 3530 2400</div>
+                </div>
+                <div class="d-f ai-c">
+                    <a href="mailto:emeaclientservices@fitchsolutions.com" class="mr- bdrs-50pct bdw-1 bdc-gray300 bds-s p- cur-p-hv bgc-dim10-hv">
+                        <svg class="h-24px w-24px fill-gray400" viewBox="0 0 1792 1792" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="none">
+                            <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
+                        </svg>
+                    </a>
+                    <div><span class="fw-m tt-u">Frankfurt</span><br /><a href="mailto:emeaclientservices@fitchsolutions.com">Client Services</a><br
+                        />+49 69 768 076 253</div>
+                </div>
+                <div class="d-f ai-c">
+                    <a href="mailto:asiaclient.services@fitchsolutions.com" class="mr- bdrs-50pct bdw-1 bdc-gray300 bds-s p- cur-p-hv bgc-dim10-hv">
+                        <svg class="h-24px w-24px fill-gray400" viewBox="0 0 1792 1792" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="none">
+                            <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
+                        </svg>
+                    </a>
+                    <div><span class="fw-m tt-u">Hong Kong</span><br /><a href="mailto:asiaclient.services@fitchsolutions.com">Client Services</a><br
+                        />+852 2263 9999</div>
+                </div>
+                <div class="d-f ai-c">
+                    <a href="mailto:asiaclient.services@fitchsolutions.com" class="mr- bdrs-50pct bdw-1 bdc-gray300 bds-s p- cur-p-hv bgc-dim10-hv">
+                        <svg class="h-24px w-24px fill-gray400" viewBox="0 0 1792 1792" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             preserveAspectRatio="none">
+                            <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
+                        </svg>
+                    </a>
+                    <div><span class="fw-m tt-u">Singapore</span><br /><a href="mailto:asiaclient.services@fitchsolutions.com">Client Services</a><br
+                    />+65 6796 7231</div>
+                </div>
+                <div class="d-f ai-c">
+                    <a href="mailto:asiaclient.services@fitchsolutions.com" class="mr- bdrs-50pct bdw-1 bdc-gray300 bds-s p- cur-p-hv bgc-dim10-hv">
+                        <svg class="h-24px w-24px fill-gray400" viewBox="0 0 1792 1792" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="none">
+                            <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
+                        </svg>
+                    </a>
+                    <div><span class="fw-m tt-u">Tokyo</span><br /><a href="mailto:asiaclient.services@fitchsolutions.com">Client Services</a><br
+                        />+81 3 3288 2715</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="d-f jc-c mb fz-small">
+            <div id="loginCopyright" class="c-gray400 login-copyright" /p>
+        </div>
+
+    </div>
+    
+    <input type="hidden" id="clientId" value="3f9bt62s8oabarnbr97djh069l"/>
+    <input type="hidden" id="messageCode" value="sessionExpired"/>
+    <input type="hidden" id="attemptedUrl" value="%2F"/>
+    <input type="hidden" id="identitySamlBaseUrl" value="https://saml.fitchconnect-qa.com"/>
+</body>
+
+</html>
+
+10:54:40.516 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 235; columnNumber: 73; Element type "div" must be followed by either attribute specifications, ">" or "/>".

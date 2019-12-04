@@ -1,0 +1,28 @@
+{
+
+  "name" : "China Search Alert",
+  "description" : "",
+  "type" : "DATA",
+  "targets" : [
+    {
+      "_id" : "",
+      "type" : "QUERY_SCREENER_ENTITY",
+      "query" : "{\"facets\":{\"ENTITY\":[{\"id\":\"80442243\",\"text\":\"China\",\"children\":[],\"showKeywordIcon\":false,\"isOperator\":false,\"type\":\"ENTITY\"}]},\"operators\":{\"ENTITY\":\"AND\"},\"requestBody\":{\"pageStart\":0,\"pageSize\":100,\"sortField\":\"entityName\",\"sortOrder\":\"asc\",\"slice\":{},\"entity\":{\"keywords\":[],\"marketSectorIds\":[],\"entityIds\":[\"80442243\"],\"geographies\":[],\"rated\":null},\"financial\":null,\"rating\":{\"ratingsDateFilter\":{\"startDate\":\"\",\"endDate\":\"\",\"latest\":true},\"ratings\":[{\"ratingType\":\"fitch-ratings\",\"ratingTypeID\":\"FC_LT_IDR\",\"ratingCodes\":null,\"ratingActions\":null,\"ratingAlerts\":null}]},\"operator\":{\"operators\":[{\"category\":\"entityIds\",\"operator\":\"AND\"}]},\"fir\":null},\"identifiers\":[]}",
+      "ratableIds" : [
+
+      ]
+    }
+  ],
+  "triggers" : [
+    {
+      "type" : "NEWS",
+      "values" : [
+        "ALL_NEWS"
+      ]
+
+    }
+  ],
+  "frequency" : {
+    "type" : "INSTANT"
+  }
+}

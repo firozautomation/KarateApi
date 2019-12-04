@@ -1,0 +1,26 @@
+14:47:43.339 karate.env system property was: null 
+14:47:43.357 request:
+1 > GET https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+14:47:43.743 response time in milliseconds: 385.13
+1 < 405
+1 < Allow: POST
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Sun, 21 Jul 2019 18:47:43 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"timestamp":"2019-07-21T18:47:43.469+0000","status":405,"error":"Method Not Allowed","message":"Request method 'GET' not supported","path":"/oauth/token"}
+
+14:47:43.744 status code was: 405, expected: 200, response time: 385, url: https://api.fitchconnect-qa.com/v1/oauth/token, response: {"timestamp":"2019-07-21T18:47:43.469+0000","status":405,"error":"Method Not Allowed","message":"Request method 'GET' not supported","path":"/oauth/token"}

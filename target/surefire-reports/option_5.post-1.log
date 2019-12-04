@@ -1,0 +1,28 @@
+09:59:11.831 karate.env system property was: null 
+09:59:11.852 request:
+1 > POST https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 86
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+grant_type=password&password=Connect1&username=miah.ashrafuzzaman%40fitchsolutions.com
+
+09:59:12.218 response time in milliseconds: 364.42
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Tue, 23 Jul 2019 13:59:12 GMT
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTYzODkzOTUyLCJpYXQiOjE1NjM4OTAzNTIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3OWUwYWQwNy1jZWExLTRjNTktODAwZi0xNTVhMDE5ZWJmOWMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.sMzzertR7MKq3ac0fNkDn4T4YKKRSq1m0_KbcbY_CUc","token_type":"bearer","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNzllMGFkMDctY2VhMS00YzU5LTgwMGYtMTU1YTAxOWViZjljIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5MDc0MzUyLCJpYXQiOjE1NjM4OTAzNTIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI4ZWJjNTIzNC04YmY1LTQzZTktODU0ZS1iYjQ0M2JmNzU2YTMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.Zv6hKNcHulLDMZOBzhQfAygIJdyTbUdX8aiEfvZTD1k","expires_in":3599,"scope":"trust","sub":"http://identity-data-service:8080/v2/users/5ba3d4fae90c9f0001733862","iss":"https://login.fitchconnect-qa.com","iat":1563890352,"jti":"79e0ad07-cea1-4c59-800f-155a019ebf9c"}
+
+09:59:12.222 [print] Login token created: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNzllMGFkMDctY2VhMS00YzU5LTgwMGYtMTU1YTAxOWViZjljIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5MDc0MzUyLCJpYXQiOjE1NjM4OTAzNTIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI4ZWJjNTIzNC04YmY1LTQzZTktODU0ZS1iYjQ0M2JmNzU2YTMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.Zv6hKNcHulLDMZOBzhQfAygIJdyTbUdX8aiEfvZTD1k

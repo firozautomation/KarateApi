@@ -1,0 +1,49 @@
+12:13:52.621 karate.env system property was: null 
+12:13:52.632 request:
+1 > POST https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 86
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+grant_type=password&password=Connect1&username=miah.ashrafuzzaman%40fitchsolutions.com
+
+12:13:53.085 response time in milliseconds: 451.62
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 31 Jul 2019 16:13:53 GMT
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY0NTkzMjMzLCJpYXQiOjE1NjQ1ODk2MzMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI2NWYwNzA5ZC03N2YwLTQ1NGQtOGQwMi1iM2JkMzIyMTk5ZWMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.laq9zVXUsxVnKvB4WMTAIsU5EJahCzLDjcM25-dpaAA","token_type":"bearer","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNjVmMDcwOWQtNzdmMC00NTRkLThkMDItYjNiZDMyMjE5OWVjIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzczNjMzLCJpYXQiOjE1NjQ1ODk2MzMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJlY2IwM2ZlMi1lNDU2LTRhNjQtOGY1NC1iMmE2MmY1OGY1MTQiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.3lHHrfm95_1lF7NfgV0OEq0m82CA1iqmtNeThTZNzoI","expires_in":3599,"scope":"trust","sub":"http://identity-data-service:8080/v2/users/5ba3d4fae90c9f0001733862","iss":"https://login.fitchconnect-qa.com","iat":1564589633,"jti":"65f0709d-77f0-454d-8d02-b3bd322199ec"}
+
+12:13:53.089 [print] Login token created: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNjVmMDcwOWQtNzdmMC00NTRkLThkMDItYjNiZDMyMjE5OWVjIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzczNjMzLCJpYXQiOjE1NjQ1ODk2MzMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJlY2IwM2ZlMi1lNDU2LTRhNjQtOGY1NC1iMmE2MmY1OGY1MTQiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.3lHHrfm95_1lF7NfgV0OEq0m82CA1iqmtNeThTZNzoI
+12:13:53.106 request:
+2 > POST https://kubernetes.fitchconnect-qa.com/api/v1/proxy/namespaces/default/services/api-ews-data-service:8080/v1/ews/data
+2 > Accept: application/json
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNjVmMDcwOWQtNzdmMC00NTRkLThkMDItYjNiZDMyMjE5OWVjIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzczNjMzLCJpYXQiOjE1NjQ1ODk2MzMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJlY2IwM2ZlMi1lNDU2LTRhNjQtOGY1NC1iMmE2MmY1OGY1MTQiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.3lHHrfm95_1lF7NfgV0OEq0m82CA1iqmtNeThTZNzoI
+2 > Connection: Keep-Alive
+2 > Content-Length: 112
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: kubernetes.fitchconnect-qa.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+2 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+[{"entity":{"id":"110631","type":"fitchId"},"viewdefId":"5d0294399ec63b00011390e9","ratingsTimeFrame":"Yearly"}]
+
+12:13:53.695 response time in milliseconds: 587.67
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Length: 5292
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Wed, 31 Jul 2019 16:13:53 GMT
+{"data":{"dashboards":[{"trend":"Upward","type":"macroIndicators","totalTrendUp":"3/5","totalTrendDown":"1/5","totalTrendSame":"1/5","totalChange":"2.59%","totalFields":"5","upwardChangeValues":["4.64","12.16","1.73"],"downwardChangeValues":["-8.17"]},{"trend":"Downward","type":"financials","totalTrendUp":"1/5","totalTrendDown":"3/5","totalTrendSame":"1/5","totalChange":"-0.677%","totalFields":"5","upwardChangeValues":["6.77"],"downwardChangeValues":["-9.02","-0.14","-0.32"]},{"trend":"Upward","type":"ratings","totalTrendUp":"2/5","totalTrendSame":"2/5","totalTrendNotApplicable":"1/5","totalChange":"Increased By 4 Notches","totalFields":"5","upwardChangeValues":["2","2"],"downwardChangeValues":[]},{"trend":"Downward","type":"countryRiskIndex","totalTrendUp":"1/5","totalTrendDown":"2/5","totalTrendSame":"2/5","totalChange":"-2.067%","totalFields":"5","upwardChangeValues":["0.85"],"downwardChangeValues":["-0.49","-6.56"]}],"cardRows":[{"trend":"Upward","previous":"20488001044100","current":"21437643690500","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"4.64%","type":"macroIndicators","fitchFieldId":"FC_GDP_USD_SOV","timeFrame":"Yearly"},{"trend":"Same","previous":"96.3","current":"96.3","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"0%","type":"macroIndicators","fitchFieldId":"FC_EASE_BUSINESS_SOV","timeFrame":"Yearly"},{"trend":"Upward","previous":"3.8549","current":"3.3861","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"-12.16%","type":"macroIndicators","fitchFieldId":"FC_UNEMPLOYMENT_SOV","timeFrame":"Yearly"},{"trend":"Downward","previous":"2.57","current":"2.36","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"-8.17%","type":"macroIndicators","fitchFieldId":"FC_CONSUMER_PRICES_ANNUAL_SOV","timeFrame":"Yearly"},{"trend":"Upward","previous":"102.3646","current":"100.5975","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"-1.73%","type":"macroIndicators","fitchFieldId":"FC_GROSS_EXT_DEBT_GDP_SOV","timeFrame":"Yearly"},{"trend":"Same","previous":"2338833000000","current":"2354507000000","previousDate":"2018-09-30","currentDate":"2018-12-31","change":"0.67%","type":"financials","fitchFieldId":"FC_TOTAL_ASSETS_BNK","timeFrame":"Quarterly"},{"trend":"Downward","previous":"1.33","current":"1.21","previousDate":"2018-09-30","currentDate":"2018-12-31","change":"-9.02%","type":"financials","fitchFieldId":"FC_NPL_GROSS_LOANS_BNK","timeFrame":"Quarterly"},{"trend":"Upward","previous":"2.51","current":"2.34","previousDate":"2018-09-30","currentDate":"2018-12-31","change":"-6.77%","type":"financials","fitchFieldId":"FC_OPER_PROFIT_RISK_WEIGHTED_ASSETS_BNK","timeFrame":"Quarterly"},{"trend":"Downward","previous":"7.18","current":"7.19","previousDate":"2018-09-30","currentDate":"2018-12-31","change":"0.14%","type":"financials","fitchFieldId":"FC_TANGIBLE_COMMON_EQUITY_TANGIBLE_ASSETS_BNK","timeFrame":"Quarterly"},{"trend":"Downward","previous":"69.51","current":"69.29","previousDate":"2018-09-30","currentDate":"2018-12-31","change":"-0.32%","type":"financials","fitchFieldId":"FC_LOAN_CUSTOMER_DEPOSITS_BNK","timeFrame":"Quarterly"},{"trend":"Upward","previous":"A+","current":"AA","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"Increased By 2 Notches","type":"ratings","fitchFieldId":"FC_LT_IDR","action":"Upgrade","timeFrame":"Yearly"},{"trend":"Upward","previous":"a+","current":"aa","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"Increased By 2 Notches","type":"ratings","fitchFieldId":"FC_VR","action":"Upgrade","timeFrame":"Yearly"},{"trend":"Same","previous":"F1","current":"F1","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"No Change","type":"ratings","fitchFieldId":"FC_ST_IDR","action":"Affirmed","timeFrame":"Yearly"},{"trend":"New","previous":"","current":"A2","currentDate":"2019-12-31","change":"New","type":"ratings","fitchFieldId":"FC_LT_DERIVED_DEBT_MDY","action":"","timeFrame":"Yearly"},{"trend":"Same","previous":"A-","current":"A-","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"No Change","type":"ratings","fitchFieldId":"FC_LT_FC_ISSR_SP","action":"Affirmed","timeFrame":"Yearly"},{"trend":"Downward","previous":"78.32","current":"77.94","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"-0.49%","type":"countryRiskIndex","fitchFieldId":"BMI_INDEX_COMPOSITE_UNIT","timeFrame":"Yearly"},{"trend":"Same","previous":"84.17","current":"84.17","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"0%","type":"countryRiskIndex","fitchFieldId":"BMI_INDEX_POL_ST_UNIT","timeFrame":"Yearly"},{"trend":"Downward","previous":"73.13","current":"68.33","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"-6.56%","type":"countryRiskIndex","fitchFieldId":"BMI_INDEX_ECON_ST_UNIT","timeFrame":"Yearly"},{"trend":"Upward","previous":"76.84","current":"77.49","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"0.85%","type":"countryRiskIndex","fitchFieldId":"BMI_INDEX_OPRISK_UNIT","timeFrame":"Yearly"},{"trend":"Same","previous":"70.5","current":"70.5","previousDate":"2018-12-31","currentDate":"2019-12-31","change":"0%","type":"countryRiskIndex","fitchFieldId":"BMI_INDEX_OPRISK_SECURITY_UNIT","timeFrame":"Yearly"}]},"total":24}
+

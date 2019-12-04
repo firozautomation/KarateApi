@@ -1,0 +1,54 @@
+11:40:50.467 karate.env system property was: null 
+11:40:50.775 request:
+1 > POST https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 84
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+grant_type=password&password=Connect1&username=paulette.warrick%40fitchsolutions.com
+
+11:40:51.212 response time in milliseconds: 433.18
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Tue, 30 Jul 2019 15:40:51 GMT
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWFjNzgzNGMwMjI3YWIwMDAxOTVmOGMyIiwic2NvcGUiOlsidHJ1c3QiXSwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY0NTA0ODUxLCJpYXQiOjE1NjQ1MDEyNTEsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI2ZjZiZTE1Mi1iYzkzLTRkNDEtYWYyOS1jYzI5NzIzMzJmMTgiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.Y7TUxYTbU-nYR_PhqKpJyuKfGwSqSANhVymo8IsQMys","token_type":"bearer","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWFjNzgzNGMwMjI3YWIwMDAxOTVmOGMyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNmY2YmUxNTItYmM5My00ZDQxLWFmMjktY2MyOTcyMzMyZjE4IiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5Njg1MjUxLCJpYXQiOjE1NjQ1MDEyNTEsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5YjdhMTRmYS04Y2IxLTQ4Y2MtYmZlMC1hYzk1MjExZmU2MDMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.CbT-SbTkrglYUXg43eCdH_VMBQ9NEdxkmHNyDUzwAS8","expires_in":3599,"scope":"trust","sub":"http://identity-data-service:8080/v2/users/5ac7834c0227ab000195f8c2","iss":"https://login.fitchconnect-qa.com","iat":1564501251,"jti":"6f6be152-bc93-4d41-af29-cc2972332f18"}
+
+11:40:51.232 [print] Login token created: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWFjNzgzNGMwMjI3YWIwMDAxOTVmOGMyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNmY2YmUxNTItYmM5My00ZDQxLWFmMjktY2MyOTcyMzMyZjE4IiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5Njg1MjUxLCJpYXQiOjE1NjQ1MDEyNTEsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5YjdhMTRmYS04Y2IxLTQ4Y2MtYmZlMC1hYzk1MjExZmU2MDMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.CbT-SbTkrglYUXg43eCdH_VMBQ9NEdxkmHNyDUzwAS8
+11:40:51.249 request:
+2 > GET https://auth.fitchconnect-qa.com/v2/users/5ac7834c0227ab000195f8c2
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWFjNzgzNGMwMjI3YWIwMDAxOTVmOGMyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiNmY2YmUxNTItYmM5My00ZDQxLWFmMjktY2MyOTcyMzMyZjE4IiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5Njg1MjUxLCJpYXQiOjE1NjQ1MDEyNTEsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5YjdhMTRmYS04Y2IxLTQ4Y2MtYmZlMC1hYzk1MjExZmU2MDMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.CbT-SbTkrglYUXg43eCdH_VMBQ9NEdxkmHNyDUzwAS8
+2 > Connection: Keep-Alive
+2 > Content-Type: application/vnd.api+json
+2 > Host: auth.fitchconnect-qa.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+2 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+
+11:40:51.417 response time in milliseconds: 166.72
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Tue, 30 Jul 2019 15:40:51 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Server: nginx/1.15.10
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data":{"id":"5ac7834c0227ab000195f8c2","type":"users","attributes":{"lastName":"W","webUserId":623907153,"persona":"Counter Party Credit Risk","proxyLoginExpiration":null,"fullName":null,"customData":{"country":"United States of America","phoneNumber":"123","city":"new york","streetAddress":"33 whitehall street","web_usr_id":623907153,"jobTitle":"","postCode":"10004","secondaryPhoneNumber":"","state":"AK","department":""},"lastLoginDate":1564501251185,"termsOfUseMostRecentAcceptedVersion":2,"firstName":"Paulette","usePlainTextEmails":false,"password":"$2a$10$2.CzlSZZMVarXauBoUv/xOxml6Bh198/k0tSks3fIAFaH2OpYoG..","external":{},"externalSamlId":null,"termsOfUseMostRecentAcceptedDate":1559577997292,"middleName":null,"email":"paulette.warrick@fitchsolutions.com","username":"paulette.warrick@fitchsolutions.com","status":"ENABLED","salesRegion":"AMERS"},"relationships":{"organization":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ac7834c0227ab000195f8c2/organization","self":"https://auth.fitchconnect-qa.com/v2/users/5ac7834c0227ab000195f8c2/relationships/organization"},"data":{"id":"4nrYkI7VCzAniLey5sRRop","type":"organizations"}},"groups":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ac7834c0227ab000195f8c2/groups","self":"https://auth.fitchconnect-qa.com/v2/users/5ac7834c0227ab000195f8c2/relationships/groups"}},"effectivePackages":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ac7834c0227ab000195f8c2/effectivePackages","self":"https://auth.fitchconnect-qa.com/v2/users/5ac7834c0227ab000195f8c2/relationships/effectivePackages"}}},"meta":{"updatedOn":1564501251.193000000,"createdOn":1523024716.000000000,"hasAccess":true,"samlEnabled":true,"isTrialUser":true},"links":{"self":"https://auth.fitchconnect-qa.com/v2/users/5ac7834c0227ab000195f8c2"}},"included":[]}
+

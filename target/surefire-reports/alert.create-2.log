@@ -1,0 +1,3 @@
+14:45:27.834 karate.env system property was: null 
+14:45:27.860 url not set, please refer to the keyword documentation for 'url'
+14:45:27.861 http request failed: url not set, please refer to the keyword documentation for 'url'

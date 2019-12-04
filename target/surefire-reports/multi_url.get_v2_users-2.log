@@ -1,0 +1,50 @@
+12:14:08.727 karate.env system property was: null 
+12:14:08.739 request:
+1 > POST https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 86
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+grant_type=password&password=Connect1&username=miah.ashrafuzzaman%40fitchsolutions.com
+
+12:14:09.142 response time in milliseconds: 402.91
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 31 Jul 2019 16:14:09 GMT
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY0NTkzMjQ5LCJpYXQiOjE1NjQ1ODk2NDksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJmOThjOWQzMi03OTFjLTQyYWMtOTYzYy1mNWEyMWUwZjY1MGYiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.aS8xvzbbjG-XAvQa0YFlJG9Mjv_FeWAU97-by7wmklo","token_type":"bearer","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiZjk4YzlkMzItNzkxYy00MmFjLTk2M2MtZjVhMjFlMGY2NTBmIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzczNjQ5LCJpYXQiOjE1NjQ1ODk2NDksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5NzFhZmEwMC1jMWYwLTRjZmItYjNlNi1mMzc0MDUxZDEwN2YiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.700liAQfHPtt2hNQcOPyqK9EghgAm4G7xXxWcyzMSAQ","expires_in":3599,"scope":"trust","sub":"http://identity-data-service:8080/v2/users/5ba3d4fae90c9f0001733862","iss":"https://login.fitchconnect-qa.com","iat":1564589649,"jti":"f98c9d32-791c-42ac-963c-f5a21e0f650f"}
+
+12:14:09.144 [print] Login token created: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiZjk4YzlkMzItNzkxYy00MmFjLTk2M2MtZjVhMjFlMGY2NTBmIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzczNjQ5LCJpYXQiOjE1NjQ1ODk2NDksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5NzFhZmEwMC1jMWYwLTRjZmItYjNlNi1mMzc0MDUxZDEwN2YiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.700liAQfHPtt2hNQcOPyqK9EghgAm4G7xXxWcyzMSAQ
+12:14:09.167 request:
+2 > POST http://kafka-rest.fitchsolutions-qa.com:8082/topics/moodys
+2 > Accept: application/vnd.kafka.v2+json, application/vnd.kafka+json, application/json
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiZjk4YzlkMzItNzkxYy00MmFjLTk2M2MtZjVhMjFlMGY2NTBmIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzczNjQ5LCJpYXQiOjE1NjQ1ODk2NDksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5NzFhZmEwMC1jMWYwLTRjZmItYjNlNi1mMzc0MDUxZDEwN2YiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.700liAQfHPtt2hNQcOPyqK9EghgAm4G7xXxWcyzMSAQ
+2 > Connection: Keep-Alive
+2 > Content-Length: 359
+2 > Content-Type: application/vnd.kafka.avro.v2+json; charset=UTF-8
+2 > Host: kafka-rest.fitchsolutions-qa.com:8082
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+2 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+{"value_schema_id":43,"records":[{"value":{"type":"Moodys","ratingType":"FC_LT_LC_ISSR","rating":"Aa2","ratingDate":"2019-8-23","ratingDirection":"Upgrade","watchlist":"","watchlistDate":"2018-09-24","ratingRank":12,"agentId":"1011270","marketSectorIds":["07050100","07050101","07050102"],"countryISOCode":"US","fitchFieldId":"123","changedFields":["New"]}}]}
+
+12:14:09.199 response time in milliseconds: 30.58
+2 < 200
+2 < Content-Length: 118
+2 < Content-Type: application/vnd.kafka.v2+json
+2 < Date: Wed, 31 Jul 2019 16:14:09 GMT
+2 < Server: Jetty(9.2.24.v20180105)
+{"offsets":[{"partition":0,"offset":701271,"error_code":null,"error":null}],"key_schema_id":null,"value_schema_id":43}
+
+

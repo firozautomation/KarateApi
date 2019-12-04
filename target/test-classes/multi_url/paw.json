@@ -1,0 +1,22 @@
+{
+  "value_schema_id": 43,
+  "records": [
+    {
+      "value": {
+        "type": "Moodys",
+        "ratingType": "FC_LT_LC_ISSR",
+        "rating": "Aa2",
+        "ratingDate": "2019-8-23",
+        "ratingDirection": "Upgrade",
+        "watchlist": "",
+        "watchlistDate": "2018-09-24",
+        "ratingRank": 12,
+        "agentId":"1011270",
+        "marketSectorIds" :["07050100","07050101","07050102"],
+        "countryISOCode" :"US",
+        "fitchFieldId": "123",
+        "changedFields": ["New"]
+      }
+    }
+  ]
+}

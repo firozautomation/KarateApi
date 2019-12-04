@@ -1,0 +1,55 @@
+11:34:36.008 karate.env system property was: null 
+11:34:36.424 request:
+1 > POST https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 86
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+grant_type=password&password=Connect1&username=miah.ashrafuzzaman%40fitchsolutions.com
+
+11:34:37.042 response time in milliseconds: 614.43
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 31 Jul 2019 15:34:37 GMT
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY0NTkwODc3LCJpYXQiOjE1NjQ1ODcyNzcsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5ZDZiYjMyNy1jNWRhLTQ5OGEtODVhYS1hYWM0MjYzZmYxMjAiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.22gT3d4DQcJ4g_IMiQk_12uBIMQNR1Jytsmh_hH3nn4","token_type":"bearer","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiOWQ2YmIzMjctYzVkYS00OThhLTg1YWEtYWFjNDI2M2ZmMTIwIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzcxMjc3LCJpYXQiOjE1NjQ1ODcyNzcsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJjNmFkYTA1OC1jN2M3LTQxNzAtOGU0YS02ODhkMjdkNTAyNGQiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.JHL95R0DaMJRw3KaPAN0bc_8EheljlX1Y-P1YLRANn0","expires_in":3599,"scope":"trust","sub":"http://identity-data-service:8080/v2/users/5ba3d4fae90c9f0001733862","iss":"https://login.fitchconnect-qa.com","iat":1564587277,"jti":"9d6bb327-c5da-498a-85aa-aac4263ff120"}
+
+11:34:37.057 [print] Login token created: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiOWQ2YmIzMjctYzVkYS00OThhLTg1YWEtYWFjNDI2M2ZmMTIwIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzcxMjc3LCJpYXQiOjE1NjQ1ODcyNzcsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJjNmFkYTA1OC1jN2M3LTQxNzAtOGU0YS02ODhkMjdkNTAyNGQiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.JHL95R0DaMJRw3KaPAN0bc_8EheljlX1Y-P1YLRANn0
+11:34:37.074 request:
+2 > GET https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiOWQ2YmIzMjctYzVkYS00OThhLTg1YWEtYWFjNDI2M2ZmMTIwIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NzcxMjc3LCJpYXQiOjE1NjQ1ODcyNzcsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJjNmFkYTA1OC1jN2M3LTQxNzAtOGU0YS02ODhkMjdkNTAyNGQiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.JHL95R0DaMJRw3KaPAN0bc_8EheljlX1Y-P1YLRANn0
+2 > Connection: Keep-Alive
+2 > Content-Type: application/vnd.api+json
+2 > Host: auth.fitchconnect-qa.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+2 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+
+11:34:37.167 response time in milliseconds: 92.72
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Wed, 31 Jul 2019 15:34:37 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Server: nginx/1.15.10
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data":{"id":"5ba3d4fae90c9f0001733862","type":"users","attributes":{"lastName":"Miah","webUserId":927535203,"persona":"Macro-intelligence","proxyLoginExpiration":1560429295790,"fullName":null,"customData":{"country":"United States of America","phoneNumber":"2129085555","city":"New York","streetAddress":"300 West 57th St","web_usr_id":927535203,"jobTitle":"","postCode":"10019","secondaryPhoneNumber":"6465823544","state":"NY","department":""},"lastLoginDate":1564587277021,"termsOfUseMostRecentAcceptedVersion":2,"firstName":"Ashrafuzzaman","usePlainTextEmails":false,"password":"$2a$10$yM3teaUW9qzC0Y7g3txQs.iHGNTHFczxo5UizU1ig/rZgQHye5pJC","external":{},"externalSamlId":null,"termsOfUseMostRecentAcceptedDate":1553776407392,"middleName":null,"email":"miah.ashrafuzzaman@fitchsolutions.com","username":"Mia","status":"ENABLED","salesRegion":"AMERS"},"relationships":{"organization":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/organization","self":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/relationships/organization"},"data":{"id":"4nrYkI7VCzAniLey5sRRop","type":"organizations"}},"groups":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/groups","self":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/relationships/groups"}},"effectivePackages":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/effectivePackages","self":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/relationships/effectivePackages"}}},"meta":{"updatedOn":1564587277.026000000,"createdOn":1537463546.000000000,"hasAccess":true,"samlEnabled":true,"isTrialUser":true},"links":{"self":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862"}},"included":[]}
+
+16:14:53.463 assertion failed: path: $.data.id, actual: '5ba3d4fae90c9f0001733862', expected: '5ac7834c0227ab000195f8c2', reason: not equal

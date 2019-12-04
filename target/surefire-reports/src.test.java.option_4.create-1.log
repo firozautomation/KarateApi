@@ -1,0 +1,49 @@
+10:18:48.363 karate.env system property was: null 
+10:18:48.720 request:
+1 > POST https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 86
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+grant_type=password&password=Connect1&username=miah.ashrafuzzaman%40fitchsolutions.com
+
+10:18:49.169 response time in milliseconds: 446.98
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Tue, 30 Jul 2019 14:18:49 GMT
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY0NDk5OTI5LCJpYXQiOjE1NjQ0OTYzMjksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIyYTgxNWIzZi1iZDRiLTQ3YWEtOWUyMi1kOGI4ZGFjOWM1OTEiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.4BNwCy1V7wUUl4zpDTqJJje7w_16_UX9ZfCRo4D6mmU","token_type":"bearer","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiMmE4MTViM2YtYmQ0Yi00N2FhLTllMjItZDhiOGRhYzljNTkxIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgwMzI5LCJpYXQiOjE1NjQ0OTYzMjksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5ZWEzYmQxNC1mMzczLTQxMDEtOTEwOC02MjkwOWZiODYzNWEiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.ctDnJnuseasDqg04KrQLSzOoVMiv1RSigHAw0k7_eBY","expires_in":3599,"scope":"trust","sub":"http://identity-data-service:8080/v2/users/5ba3d4fae90c9f0001733862","iss":"https://login.fitchconnect-qa.com","iat":1564496329,"jti":"2a815b3f-bd4b-47aa-9e22-d8b8dac9c591"}
+
+10:18:49.181 [print] Login token created: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiMmE4MTViM2YtYmQ0Yi00N2FhLTllMjItZDhiOGRhYzljNTkxIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgwMzI5LCJpYXQiOjE1NjQ0OTYzMjksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5ZWEzYmQxNC1mMzczLTQxMDEtOTEwOC02MjkwOWZiODYzNWEiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.ctDnJnuseasDqg04KrQLSzOoVMiv1RSigHAw0k7_eBY
+10:18:49.199 request:
+2 > POST https://api.fitchconnect-qa.com/v1/alert/settings
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWJhM2Q0ZmFlOTBjOWYwMDAxNzMzODYyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiMmE4MTViM2YtYmQ0Yi00N2FhLTllMjItZDhiOGRhYzljNTkxIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5NjgwMzI5LCJpYXQiOjE1NjQ0OTYzMjksImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5ZWEzYmQxNC1mMzczLTQxMDEtOTEwOC02MjkwOWZiODYzNWEiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.ctDnJnuseasDqg04KrQLSzOoVMiv1RSigHAw0k7_eBY
+2 > Connection: Keep-Alive
+2 > Content-Length: 1006
+2 > Content-Type: application/vnd.api+json; charset=UTF-8
+2 > Host: api.fitchconnect-qa.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+2 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+{"name":"China Search Alert","description":"","type":"DATA","targets":[{"_id":"","type":"QUERY_SCREENER_ENTITY","query":"{\"facets\":{\"ENTITY\":[{\"id\":\"80442243\",\"text\":\"China\",\"children\":[],\"showKeywordIcon\":false,\"isOperator\":false,\"type\":\"ENTITY\"}]},\"operators\":{\"ENTITY\":\"AND\"},\"requestBody\":{\"pageStart\":0,\"pageSize\":100,\"sortField\":\"entityName\",\"sortOrder\":\"asc\",\"slice\":{},\"entity\":{\"keywords\":[],\"marketSectorIds\":[],\"entityIds\":[\"80442243\"],\"geographies\":[],\"rated\":null},\"financial\":null,\"rating\":{\"ratingsDateFilter\":{\"startDate\":\"\",\"endDate\":\"\",\"latest\":true},\"ratings\":[{\"ratingType\":\"fitch-ratings\",\"ratingTypeID\":\"FC_LT_IDR\",\"ratingCodes\":null,\"ratingActions\":null,\"ratingAlerts\":null}]},\"operator\":{\"operators\":[{\"category\":\"entityIds\",\"operator\":\"AND\"}]},\"fir\":null},\"identifiers\":[]}","ratableIds":[]}],"triggers":[{"type":"NEWS","values":["ALL_NEWS"]}],"frequency":{"type":"INSTANT"}}
+
+10:18:49.296 response time in milliseconds: 95.97
+2 < 201
+2 < Connection: keep-alive
+2 < Content-Type: application/vnd.api+json;charset=UTF-8
+2 < Date: Tue, 30 Jul 2019 14:18:49 GMT
+2 < Server: nginx/1.15.10
+2 < Transfer-Encoding: chunked
+{"data":{"id":"5d4051c94f9f560001edd26a","name":"China Search Alert","description":"","type":"DATA","disabled":false,"cloneable":true,"lastTriggered":null,"hasFinancial":false,"created":1564496329289,"updated":null,"updatedBy":null,"oldId":null,"userId":"5ba3d4fae90c9f0001733862","targets":[{"type":"QUERY_SCREENER_ENTITY","id":null,"query":"{\"facets\":{\"ENTITY\":[{\"id\":\"80442243\",\"text\":\"China\",\"children\":[],\"showKeywordIcon\":false,\"isOperator\":false,\"type\":\"ENTITY\"}]},\"operators\":{\"ENTITY\":\"AND\"},\"requestBody\":{\"pageStart\":0,\"pageSize\":100,\"sortField\":\"entityName\",\"sortOrder\":\"asc\",\"slice\":{},\"entity\":{\"keywords\":[],\"marketSectorIds\":[],\"entityIds\":[\"80442243\"],\"geographies\":[],\"rated\":null},\"financial\":null,\"rating\":{\"ratingsDateFilter\":{\"startDate\":\"\",\"endDate\":\"\",\"latest\":true},\"ratings\":[{\"ratingType\":\"fitch-ratings\",\"ratingTypeID\":\"FC_LT_IDR\",\"ratingCodes\":null,\"ratingActions\":null,\"ratingAlerts\":null}]},\"operator\":{\"operators\":[{\"category\":\"entityIds\",\"operator\":\"AND\"}]},\"fir\":null},\"identifiers\":[]}","ratableIds":[]}],"triggers":[{"type":"NEWS","values":["ALL_NEWS"]}],"frequency":{"type":"INSTANT","day":null,"time":null}},"total":null}
+

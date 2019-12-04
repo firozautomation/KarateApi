@@ -1,0 +1,55 @@
+09:26:02.357 karate.env system property was: null 
+09:26:02.619 request:
+1 > POST https://api.fitchconnect-qa.com/v1/oauth/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 84
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.fitchconnect-qa.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+grant_type=password&password=Connect1&username=paulette.warrick%40fitchsolutions.com
+
+09:26:03.103 response time in milliseconds: 480.63
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Tue, 30 Jul 2019 13:26:03 GMT
+1 < Pragma: no-cache
+1 < Server: nginx/1.15.10
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWFjNzgzNGMwMjI3YWIwMDAxOTVmOGMyIiwic2NvcGUiOlsidHJ1c3QiXSwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY0NDk2NzYzLCJpYXQiOjE1NjQ0OTMxNjMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI4NDMxMjhiMy0zMzcwLTQzN2QtYmNjNy0zODI1N2QzM2QwOGUiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.ZOMWBs9nRgk-5zCy7VVvDWh0oYz5O-fHNHAEEbcZqVs","token_type":"bearer","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWFjNzgzNGMwMjI3YWIwMDAxOTVmOGMyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiODQzMTI4YjMtMzM3MC00MzdkLWJjYzctMzgyNTdkMzNkMDhlIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5Njc3MTYzLCJpYXQiOjE1NjQ0OTMxNjMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI4MTRmYmY1NC04ZTAzLTRkODUtYTY1Zi1lOTRhMzUxNDVkYmMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.0NlA9efge-7C3TSv9o80epzO52YbLfQ92Rmk3b8g5LU","expires_in":3600,"scope":"trust","sub":"http://identity-data-service:8080/v2/users/5ac7834c0227ab000195f8c2","iss":"https://login.fitchconnect-qa.com","iat":1564493163,"jti":"843128b3-3370-437d-bcc7-38257d33d08e"}
+
+09:26:03.118 [print] Login token created: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWFjNzgzNGMwMjI3YWIwMDAxOTVmOGMyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiODQzMTI4YjMtMzM3MC00MzdkLWJjYzctMzgyNTdkMzNkMDhlIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5Njc3MTYzLCJpYXQiOjE1NjQ0OTMxNjMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI4MTRmYmY1NC04ZTAzLTRkODUtYTY1Zi1lOTRhMzUxNDVkYmMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.0NlA9efge-7C3TSv9o80epzO52YbLfQ92Rmk3b8g5LU
+09:26:03.134 request:
+2 > GET https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwOi8vaWRlbnRpdHktZGF0YS1zZXJ2aWNlOjgwODAvdjIvdXNlcnMvNWFjNzgzNGMwMjI3YWIwMDAxOTVmOGMyIiwic2NvcGUiOlsidHJ1c3QiXSwiYXRpIjoiODQzMTI4YjMtMzM3MC00MzdkLWJjYzctMzgyNTdkMzNkMDhlIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5maXRjaGNvbm5lY3QtcWEuY29tIiwiZXhwIjoxNTY5Njc3MTYzLCJpYXQiOjE1NjQ0OTMxNjMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI4MTRmYmY1NC04ZTAzLTRkODUtYTY1Zi1lOTRhMzUxNDVkYmMiLCJjbGllbnRfaWQiOiJscXI3bzE0NWhmZ2FyNTNsa242b3FlOGRmYSJ9.0NlA9efge-7C3TSv9o80epzO52YbLfQ92Rmk3b8g5LU
+2 > Connection: Keep-Alive
+2 > Content-Type: application/vnd.api+json
+2 > Host: auth.fitchconnect-qa.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+2 > X-App-Client-Id: 99d151e0-7066-4268-b0dc-076d1ef72815
+
+09:26:03.223 response time in milliseconds: 87.44
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Tue, 30 Jul 2019 13:26:03 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Server: nginx/1.15.10
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data":{"id":"5ba3d4fae90c9f0001733862","type":"users","attributes":{"lastName":"Miah","webUserId":927535203,"persona":"Macro-intelligence","proxyLoginExpiration":1560429295790,"fullName":null,"customData":{"country":"United States of America","phoneNumber":"2129085555","city":"New York","streetAddress":"300 West 57th St","web_usr_id":927535203,"jobTitle":"","postCode":"10019","secondaryPhoneNumber":"6465823544","state":"NY","department":""},"lastLoginDate":1564490851433,"termsOfUseMostRecentAcceptedVersion":2,"firstName":"Ashrafuzzaman","usePlainTextEmails":false,"password":"$2a$10$yM3teaUW9qzC0Y7g3txQs.iHGNTHFczxo5UizU1ig/rZgQHye5pJC","external":{},"externalSamlId":null,"termsOfUseMostRecentAcceptedDate":1553776407392,"middleName":null,"email":"miah.ashrafuzzaman@fitchsolutions.com","status":"ENABLED","username":"Mia","salesRegion":"AMERS"},"relationships":{"organization":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/organization","self":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/relationships/organization"},"data":{"id":"4nrYkI7VCzAniLey5sRRop","type":"organizations"}},"groups":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/groups","self":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/relationships/groups"}},"effectivePackages":{"links":{"related":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/effectivePackages","self":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862/relationships/effectivePackages"}}},"meta":{"updatedOn":1564490851.442000000,"createdOn":1537463546.000000000,"hasAccess":true,"samlEnabled":true,"isTrialUser":true},"links":{"self":"https://auth.fitchconnect-qa.com/v2/users/5ba3d4fae90c9f0001733862"}},"included":[]}
+
+16:20:08.320 assertion failed: path: $.data.id, actual: '5ba3d4fae90c9f0001733862', expected: '5ac7834c0227ab000195f8c2', reason: not equal
